@@ -1,71 +1,105 @@
-Berikut adalah isi lengkap `README.md` yang bisa langsung kamu salin:
 
-````
-# UTS - Server Side Programming
 
-This is a personal landing page project created as part of the Server Side Programming midterm assignment. Built using **Django** and styled with **Tailwind CSS**, the website includes personal information, project details, and a responsive design.
+# 🌐 Web Portofolio - Abdulloh Mun'am
 
-## 🔧 Tech Stack
+Ini adalah proyek web portofolio yang dibuat menggunakan Django sebagai tugas Ujian Tengah Semester (UTS) pada mata Server Side Programming. Website ini menampilkan informasi pribadi, karya-karya portofolio, serta info contact.
 
-- Python
-- Django
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+- Python 3.x
+- Django 4.x
+- HTML5
 - Tailwind CSS
-- HTML
+- Django
+- File statis (gambar & CSS)
 
-## 📄 Features
+---
 
-- Personal profile page
-- Skills and tools section
-- Responsive layout
-- Integrated with Google Maps
+Berikut keterangan struktur proyek tanpa tampilan pohon (tree):
 
-## 🚀 How to Run
+---
 
-1. **Clone the repository:**
+## 🗂️ Penjelasan Struktur Project
+
+* **`manage.py`**: Skrip utama untuk menjalankan perintah Django (seperti `runserver`, `migrate`, dll).
+* **`db.sqlite3`**: Basis data default yang digunakan oleh Django.
+* **`portfolio_website/`**: Direktori utama untuk pengaturan Django seperti `settings.py`, `urls.py`, `wsgi.py`, dan `asgi.py`.
+* **`blog/`**: Aplikasi Django untuk menampilkan artikel blog.
+* **`contact/`**: Aplikasi Django untuk mengelola halaman dan form kontak.
+* **`home/`**: Aplikasi Django untuk halaman utama (landing page), termasuk bagian hero, skills, dan lainnya.
+* **`project/`**: Aplikasi Django yang menampilkan daftar proyek yang telah dibuat.
+* **`static/`**: Berisi file statis seperti gambar dan file CSS hasil kompilasi dari Tailwind.
+* **`templates/`**: Berisi file HTML yang digunakan untuk merender halaman web, termasuk `base.html` sebagai layout utama dan komponen seperti navbar, footer, dan section-section lainnya.
+
+> Folder `__pycache__` dan file `.pyc` adalah file sementara yang dibuat secara otomatis oleh Python, dan bisa diabaikan atau dihapus dari repository.
+
+---
+
+## 🚀 Cara Menjalankan Proyek
+
+1. **Clone repositori atau download kode:**
+   ```bash
+   git clone https://github.com/username/portfolio.git
+   cd portfolio
+
+2. **Aktifkan virtual environment (opsional tapi disarankan):**
 
    ```bash
-   git clone https://github.com/AbdullohMunam/SSP-UTS.git
-   cd SSP-UTS
-````
-
-2. **Create and activate virtual environment (optional but recommended):**
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   python -m venv env
+   source env/bin/activate  # Linux/macOS
+   env\Scripts\activate     # Windows
    ```
 
-3. **Install dependencies:**
+3. **Install dependency:**
 
    ```bash
-   pip install -r requirements.txt
+   pip install django
    ```
 
-4. **Run migrations:**
-
-   ```bash
-   python manage.py migrate
-   ```
-
-5. **Run the development server:**
+4. **Jalankan server Django:**
 
    ```bash
    python manage.py runserver
    ```
 
-6. **Access the site:**
+5. **Buka browser dan akses:**
 
-   Open your browser and go to [http://127.0.0.1:8000](http://127.0.0.1:8000)
-
----
-
-> 📝 Make sure you have Python and Django installed. Tailwind is already integrated with the templates.
+   ```
+   http://127.0.0.1:8000/
+   ```
 
 ---
 
-## 📸 Preview
+## 📄 Fitur Website
 
-![Screenshot](static/images/preview.png) <!-- Update this with your own screenshot -->
+* **Homepage dengan Hero Section** – Menampilkan nama, foto, dan deskripsi singkat diri.
+* **Project Showcase** – Menampilkan daftar proyek lengkap dengan gambar dan deskripsi.
+* **Blog Section** – Artikel blog tentang teknologi, tips, atau pengalaman pribadi.
+* **Contact Form** – Formulir untuk mengirim pesan secara langsung.
+* **Responsive Design** – Tampilan responsif yang optimal di berbagai perangkat.
+* **Routing antar halaman** – Navigasi terstruktur untuk Home, Blog, Project, dan Contact.
+* **Django Admin** – Panel admin untuk mengelola konten blog, kontak, dan proyek.
+* **Static Files Management** – Mengelola file gambar dan CSS dengan struktur rapi.
+* **Tailwind CSS** – Styling modern dan konsisten menggunakan Tailwind.
 
-```
-```
+---
+
+## 📱 Responsif
+
+Website ini mendukung tampilan di berbagai ukuran layar (mobile-friendly). Elemen akan menyesuaikan secara otomatis untuk pengalaman pengguna yang lebih baik.
+
+---
+
+## 👨‍🎓 Profil Pembuat
+
+* **Nama**: Abdulloh Mun'am
+* **NIM**: 23201292
+* **Kelas**: C1
+
+---
+
+## 📚 Lisensi
+
+Proyek ini dibuat hanya untuk keperluan pembelajaran dan tugas UTS. Bebas digunakan kembali dengan atribusi yang sesuai.
